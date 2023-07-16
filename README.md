@@ -1,4 +1,8 @@
 # k8s-hpa
+
+This hpa takes scaleup/down actions using the requested CPU of the pods that form the deployment. 
+In adition, for scaledown action it uses custom metrics from the pods. It can be used as an idea to write an HPA based on custom metrics from external sources other than kubernetes API.
+
 Config via the following environment varialbles: 
 
 MIN_REPLICAS: Minimum replicas in low activity (CPU).
